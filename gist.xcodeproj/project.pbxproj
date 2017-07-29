@@ -12,9 +12,31 @@
 		E22D0C391F28F87600142DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22D0C371F28F87600142DE1 /* Main.storyboard */; };
 		E22D0C3B1F28F87600142DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22D0C3A1F28F87600142DE1 /* Assets.xcassets */; };
 		E22D0C3E1F28F87600142DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22D0C3C1F28F87600142DE1 /* LaunchScreen.storyboard */; };
+		E22D0C461F28FB1E00142DE1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22D0C451F28FB1E00142DE1 /* File.swift */; };
+		E2608E4C1F295BDA001F3578 /* Pods_gist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2E52B39E05C0D824D36303 /* Pods_gist.framework */; };
+		E2608E4D1F295BDA001F3578 /* Pods_gist.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2E52B39E05C0D824D36303 /* Pods_gist.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E2608E4F1F295CD2001F3578 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2608E461F295B9E001F3578 /* SwiftyJSON.framework */; };
+		E2608E511F295CE7001F3578 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2608E441F295B87001F3578 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E2608E4E1F295BDA001F3578 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E2608E4D1F295BDA001F3578 /* Pods_gist.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2D2E52B39E05C0D824D36303 /* Pods_gist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		516473670A38E041DB43636E /* Pods-gist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gist/Pods-gist.debug.xcconfig"; sourceTree = "<group>"; };
+		DDD1E7267143CE5FA9A81BB8 /* Pods-gist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gist.release.xcconfig"; path = "Pods/Target Support Files/Pods-gist/Pods-gist.release.xcconfig"; sourceTree = "<group>"; };
 		E22D0C301F28F87600142DE1 /* gist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22D0C331F28F87600142DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E22D0C351F28F87600142DE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +44,9 @@
 		E22D0C3A1F28F87600142DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E22D0C3D1F28F87600142DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E22D0C3F1F28F87600142DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E22D0C451F28FB1E00142DE1 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		E2608E441F295B87001F3578 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Release-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		E2608E461F295B9E001F3578 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +54,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2608E4F1F295CD2001F3578 /* SwiftyJSON.framework in Frameworks */,
+				E2608E511F295CE7001F3578 /* Alamofire.framework in Frameworks */,
+				E2608E4C1F295BDA001F3578 /* Pods_gist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4A847B5A307DC86C91A5B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				516473670A38E041DB43636E /* Pods-gist.debug.xcconfig */,
+				DDD1E7267143CE5FA9A81BB8 /* Pods-gist.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A5A78B3FF198802A2CA065F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2608E461F295B9E001F3578 /* SwiftyJSON.framework */,
+				E2608E441F295B87001F3578 /* Alamofire.framework */,
+				2D2E52B39E05C0D824D36303 /* Pods_gist.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E22D0C271F28F87500142DE1 = {
 			isa = PBXGroup;
 			children = (
 				E22D0C321F28F87600142DE1 /* gist */,
 				E22D0C311F28F87600142DE1 /* Products */,
+				0F4A847B5A307DC86C91A5B8 /* Pods */,
+				7A5A78B3FF198802A2CA065F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +109,7 @@
 				E22D0C3A1F28F87600142DE1 /* Assets.xcassets */,
 				E22D0C3C1F28F87600142DE1 /* LaunchScreen.storyboard */,
 				E22D0C3F1F28F87600142DE1 /* Info.plist */,
+				E22D0C451F28FB1E00142DE1 /* File.swift */,
 			);
 			path = gist;
 			sourceTree = "<group>";
@@ -71,9 +121,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E22D0C421F28F87600142DE1 /* Build configuration list for PBXNativeTarget "gist" */;
 			buildPhases = (
+				E739362B1496AFBCD665C001 /* [CP] Check Pods Manifest.lock */,
 				E22D0C2C1F28F87600142DE1 /* Sources */,
 				E22D0C2D1F28F87600142DE1 /* Frameworks */,
 				E22D0C2E1F28F87600142DE1 /* Resources */,
+				F64BE4BD602D9EFAB76FE7C4 /* [CP] Embed Pods Frameworks */,
+				EFD11614E084468FAFB721FB /* [CP] Copy Pods Resources */,
+				E2608E4E1F295BDA001F3578 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +150,7 @@
 				TargetAttributes = {
 					E22D0C2F1F28F87600142DE1 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7G6URHHVTY;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,12 +186,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E739362B1496AFBCD665C001 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFD11614E084468FAFB721FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gist/Pods-gist-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64BE4BD602D9EFAB76FE7C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gist/Pods-gist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E22D0C2C1F28F87600142DE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E22D0C361F28F87600142DE1 /* ViewController.swift in Sources */,
+				E22D0C461F28FB1E00142DE1 /* File.swift in Sources */,
 				E22D0C341F28F87600142DE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,8 +364,15 @@
 		};
 		E22D0C431F28F87600142DE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516473670A38E041DB43636E /* Pods-gist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7G6URHHVTY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Release-iphoneos/SwiftyJSON",
+				);
 				INFOPLIST_FILE = gist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.esabunor.gist;
@@ -272,8 +383,15 @@
 		};
 		E22D0C441F28F87600142DE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDD1E7267143CE5FA9A81BB8 /* Pods-gist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7G6URHHVTY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Release-iphoneos/SwiftyJSON",
+				);
 				INFOPLIST_FILE = gist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.esabunor.gist;
@@ -301,6 +419,7 @@
 				E22D0C441F28F87600142DE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
